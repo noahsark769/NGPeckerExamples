@@ -13,6 +13,7 @@
 		A170BC3B23A7346800EF7806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A170BC3923A7346800EF7806 /* Main.storyboard */; };
 		A170BC3D23A7346C00EF7806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A170BC3C23A7346C00EF7806 /* Assets.xcassets */; };
 		A170BC4023A7346C00EF7806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A170BC3E23A7346C00EF7806 /* LaunchScreen.storyboard */; };
+		A170BC4823A7349500EF7806 /* OptionalFunctionFromSuperclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A170BC3C23A7346C00EF7806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A170BC3F23A7346C00EF7806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A170BC4123A7346C00EF7806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalFunctionFromSuperclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A170BC3C23A7346C00EF7806 /* Assets.xcassets */,
 				A170BC3E23A7346C00EF7806 /* LaunchScreen.storyboard */,
 				A170BC4123A7346C00EF7806 /* Info.plist */,
+				A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */,
 			);
 			path = NGPeckerExamples;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A170BC4823A7349500EF7806 /* OptionalFunctionFromSuperclass.swift in Sources */,
 				A170BC3823A7346800EF7806 /* ViewController.swift in Sources */,
 				A170BC3423A7346800EF7806 /* AppDelegate.swift in Sources */,
 				A170BC3623A7346800EF7806 /* SceneDelegate.swift in Sources */,
