@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         print(Subclass())
+//        print(Test2Subclass().b())
 
         return true
     }

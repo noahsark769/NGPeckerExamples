@@ -14,7 +14,19 @@
 		A170BC3D23A7346C00EF7806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A170BC3C23A7346C00EF7806 /* Assets.xcassets */; };
 		A170BC4023A7346C00EF7806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A170BC3E23A7346C00EF7806 /* LaunchScreen.storyboard */; };
 		A170BC4823A7349500EF7806 /* OptionalFunctionFromSuperclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */; };
+		D067324D23ABC5A00093411C /* NGPeckerExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067324C23ABC5A00093411C /* NGPeckerExamplesTests.swift */; };
+		D067325523ABC5BF0093411C /* XCTestSuperclassMethodUsedBySubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067325423ABC5BF0093411C /* XCTestSuperclassMethodUsedBySubclass.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D067324F23ABC5A00093411C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A170BC2823A7346800EF7806 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A170BC2F23A7346800EF7806;
+			remoteInfo = NGPeckerExamples;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A170BC3023A7346800EF7806 /* NGPeckerExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGPeckerExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,21 @@
 		A170BC3F23A7346C00EF7806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A170BC4123A7346C00EF7806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalFunctionFromSuperclass.swift; sourceTree = "<group>"; };
+		D067324A23ABC5A00093411C /* NGPeckerExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGPeckerExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D067324C23ABC5A00093411C /* NGPeckerExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGPeckerExamplesTests.swift; sourceTree = "<group>"; };
+		D067324E23ABC5A00093411C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D067325423ABC5BF0093411C /* XCTestSuperclassMethodUsedBySubclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestSuperclassMethodUsedBySubclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A170BC2D23A7346800EF7806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D067324723ABC5A00093411C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A170BC3223A7346800EF7806 /* NGPeckerExamples */,
+				D067324B23ABC5A00093411C /* NGPeckerExamplesTests */,
 				A170BC3123A7346800EF7806 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A170BC3023A7346800EF7806 /* NGPeckerExamples.app */,
+				D067324A23ABC5A00093411C /* NGPeckerExamplesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +93,16 @@
 				A170BC4723A7349500EF7806 /* OptionalFunctionFromSuperclass.swift */,
 			);
 			path = NGPeckerExamples;
+			sourceTree = "<group>";
+		};
+		D067324B23ABC5A00093411C /* NGPeckerExamplesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D067325423ABC5BF0093411C /* XCTestSuperclassMethodUsedBySubclass.swift */,
+				D067324C23ABC5A00093411C /* NGPeckerExamplesTests.swift */,
+				D067324E23ABC5A00093411C /* Info.plist */,
+			);
+			path = NGPeckerExamplesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +125,40 @@
 			productReference = A170BC3023A7346800EF7806 /* NGPeckerExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D067324923ABC5A00093411C /* NGPeckerExamplesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D067325123ABC5A00093411C /* Build configuration list for PBXNativeTarget "NGPeckerExamplesTests" */;
+			buildPhases = (
+				D067324623ABC5A00093411C /* Sources */,
+				D067324723ABC5A00093411C /* Frameworks */,
+				D067324823ABC5A00093411C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D067325023ABC5A00093411C /* PBXTargetDependency */,
+			);
+			name = NGPeckerExamplesTests;
+			productName = NGPeckerExamplesTests;
+			productReference = D067324A23ABC5A00093411C /* NGPeckerExamplesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A170BC2823A7346800EF7806 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Noah Gilmore";
 				TargetAttributes = {
 					A170BC2F23A7346800EF7806 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					D067324923ABC5A00093411C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A170BC2F23A7346800EF7806;
 					};
 				};
 			};
@@ -119,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				A170BC2F23A7346800EF7806 /* NGPeckerExamples */,
+				D067324923ABC5A00093411C /* NGPeckerExamplesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +189,13 @@
 				A170BC4023A7346C00EF7806 /* LaunchScreen.storyboard in Resources */,
 				A170BC3D23A7346C00EF7806 /* Assets.xcassets in Resources */,
 				A170BC3B23A7346800EF7806 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D067324823ABC5A00093411C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +213,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D067324623ABC5A00093411C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D067325523ABC5BF0093411C /* XCTestSuperclassMethodUsedBySubclass.swift in Sources */,
+				D067324D23ABC5A00093411C /* NGPeckerExamplesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D067325023ABC5A00093411C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A170BC2F23A7346800EF7806 /* NGPeckerExamples */;
+			targetProxy = D067324F23ABC5A00093411C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A170BC3923A7346800EF7806 /* Main.storyboard */ = {
@@ -320,6 +402,46 @@
 			};
 			name = Release;
 		};
+		D067325223ABC5A00093411C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYDU87PPV5;
+				INFOPLIST_FILE = NGPeckerExamplesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGPeckerExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NGPeckerExamples.app/NGPeckerExamples";
+			};
+			name = Debug;
+		};
+		D067325323ABC5A00093411C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VYDU87PPV5;
+				INFOPLIST_FILE = NGPeckerExamplesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGPeckerExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NGPeckerExamples.app/NGPeckerExamples";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +459,15 @@
 			buildConfigurations = (
 				A170BC4523A7346C00EF7806 /* Debug */,
 				A170BC4623A7346C00EF7806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D067325123ABC5A00093411C /* Build configuration list for PBXNativeTarget "NGPeckerExamplesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D067325223ABC5A00093411C /* Debug */,
+				D067325323ABC5A00093411C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
